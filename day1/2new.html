@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <style>
+        /* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #38ff98; /* Header background color */
+    padding: 10px 20px;
+}
+.hi{
+    padding-left: 60%;
+}
+
+.logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    display: flex;
+    
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: white; 
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.search-bar button:hover {
+    background-color: #ddd; /* Change button color on hover */
+}
+
+    </style>
+    <div class="logo">
+        <img src="data:image/png;base64,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">
+    </div>
+    <div class="helo">ACO</div>
+    <div class="hi">
+        <button>LOGIN</button>
+        <button>SIGNUP</button>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+    </div>
+</header>
+<nav class="nav">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="shopping.html">About Us</a></li>
+        <li><a href="payment.html">Contact</a></li>
+        <li><a href="productcat.html">Contact</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
