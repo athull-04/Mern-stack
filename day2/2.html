@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management and Calendar</title>
+    <link rel="stylesheet" href="2.css"> <!-- Linking to external CSS -->
+</head>
+<body>
+
+    <header>
+        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: black; text-align: center; font-size: 40px;">B PRO</h1>
+        <nav>
+            <ul>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="#collaboration">Collaboration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calender">
+            <h2>Select Date</h2>
+            <div>
+                <label for="date">Today's Date:</label>
+                <input type="date" id="date">
+            </div>
+        </section>
+        <section id="tasks">
+            <h2>Task Management</h2>
+            <div class="task-panel">
+                <h3>Overdue Tasks</h3>
+                <div class="task-list" id="overdue-tasks">
+                    <!-- Overdue tasks will be displayed here -->
+                </div>
+
+                <h3>Completed Tasks</h3>
+                <div class="task-list" id="completed-tasks">
+                    <!-- Completed tasks will be displayed here -->
+                </div>
+
+                <h3>Add New Task</h3>
+                <input type="text" id="task-input" placeholder="Enter new task">
+                <button id="add-task-btn">Add Task</button>
+            </div>
+        </section>
+
+      
+
+        <section id="collaboration">
+            <h2>Real-Time Collaboration</h2>
+            <!-- Collaboration features can be added here -->
+            <p>This section can include chat or collaborative tools.</p>
+        </section>
+
+    </main>
+
+    <script>
+        // Set today's date in the input field
+        window.onload = function() {
+            const today = new Date();
+            const year = today.getFullYear();
+            let month = today.getMonth() + 1; // Months are zero-based
+            let day = today.getDate();
+
+            // Format month and day to ensure two digits
+            if (month < 10) month = '0' + month;
+            if (day < 10) day = '0' + day;
+
+            // Set the value of the date input
+            document.getElementById('date').value = `${year}-${month}-${day}`;
+        };
+    </script>
+
+</body>
+</html>

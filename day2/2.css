@@ -1,0 +1,73 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #00ffc3;
+    color: rgb(3, 3, 3);
+    padding: 10px 20px;
+    border: double;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 78%;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+    color: black;
+    border: double;
+    border-radius: 5px;
+    
+
+
+   
+}
+
+nav ul li a {
+    color: rgb(255, 4, 4);
+    text-decoration: none;
+   
+    
+   
+}
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.task-panel {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.task-list {
+    margin-bottom: 20px;
+}
+
+#calender {
+    margin: 20px;
+    padding-left: 70%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}

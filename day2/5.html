@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="5.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>KaSHOP</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="filter-section">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Category</h3>
+                <label><input type="checkbox"> Electronics</label><br>
+                <label><input type="checkbox"> Clothing</label><br>
+                <label><input type="checkbox"> Accessories</label><br>
+            </div>
+        </aside>
+
+        <main id="products" class="grid-container">
+            <!-- Product Items -->
+            <div class="product-item">
+                <div class="image-container">
+                    <img src="ef7882344cc7dcf1af04de7d001ff827 (1).jpg" alt="Electronics Product" class="product-image">
+                    <div class="discount">20% OFF</div>
+                    <div class="rating">☆☆☆☆</div>
+                </div>
+                <h3>Electronics Item 1</h3>
+                <p>$99.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <div class="image-container">
+                    <img src="lecrerc-1024x683.jpg" alt="Clothing Product" class="product-image">
+                    <div class="discount">15% OFF</div>
+                    <div class="rating">☆☆☆☆</div>
+                </div>
+                <h3>Clothing Item 1</h3>
+                <p>$49.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <div class="image-container">
+                    <img src="images (1).jpg" alt="Accessory Product" class="product-image">
+                    <div class="discount">10% OFF</div>
+                    <div class="rating">☆☆☆☆☆</div>
+                </div>
+                <h3>Accessory Item 1</h3>
+                <p>$25.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- More product items can be added here -->
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Shopping Site. All rights reserved.</p>
+    </footer>
+
+</body>
+
+<script src="5.js"></script> <!-- Link to external JavaScript -->
+</html>
