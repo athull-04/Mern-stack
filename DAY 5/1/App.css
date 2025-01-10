@@ -1,0 +1,182 @@
+
+
+.header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  background-color: lightblue; 
+  padding: 10px 0; 
+}
+
+.title {
+  margin: 0;
+  text-align: center; /* Center title text */
+  padding: 10px 0; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Center buttons within the container */
+  gap: 5px;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; 
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+.navigation {
+  display: flex;
+  gap: 10px; 
+  margin-top: 10px; 
+  padding: 10px; 
+  justify-content: flex-end;
+
+}
+
+.nav-button {
+  padding: 10px 25px; 
+  background-color: white; 
+  border: 2px solid #000000; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.nav-button:hover {
+  background-color: #f0f0f0; 
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-around; /* Distribute sections evenly */
+  padding: 20px;
+  background-color: lightblue; /* Light grey background */
+  border-top: 2px solid #000000; /* Top border for separation */
+}
+
+.footer-section {
+  flex: 1; /* Equal width for each section */
+  margin: 0 10px; /* Margin between sections */
+}
+
+.footer-section h4 {
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.footer-section ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.footer-section li {
+  margin-bottom: 5px; /* Space between list items */
+}
+
+.footer-section a {
+  text-decoration: none; 
+  color: #007bff; 
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+
+.main-content {
+  padding: 20px;
+}
+
+.section {
+  border: 2px solid #007bff; /* Default border */
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.section:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); 
+}
+
+.images {
+  display: flex;
+  gap: 10px; 
+  justify-content: center;
+}
+
+.images img {
+  width: 250px; 
+  height: 150px; 
+}
+
+
+.section-1 {
+  border-color: red;
+  border-style: double;
+}
+
+.section-2 {
+  border-color: green;
+  border-style: dotted;
+}
+
+.section-3 {
+  border-color: blue;
+  border-style: double;
+}
+
+.section-4 {
+  border-color: orange;
+  border-style: dashed;
+}
+
+.section-5 {
+  border-color: purple;
+  border-style: groove;
+}
+
+.section-6 {
+  border-color: pink;
+  border-style: ridge;
+}
+
+.section-7 {
+  border-color: yellow;
+  border-style: inset;
+}
+
+.section-8 {
+  border-color: cyan;
+  border-style: outset;
+}
+
+.section-9 {
+  border-color: magenta;
+  border-style: none;
+}
+
+.section-10 {
+  border-color: brown;
+  border-style: hidden;
+}
+
+
+.chat-support {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chat-support img {
+  width: 50px;
+}
+
