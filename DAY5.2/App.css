@@ -1,0 +1,95 @@
+/* General styling for the app */
+.app-container {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #e23333;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(125, 108, 108);
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  width: 75%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.task-input:focus {
+  border-color: #00f7ff;
+}
+
+.add-btn {
+  width: 30%;
+  padding: 10px;
+  background-color: #053b2e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.task-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-text {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
