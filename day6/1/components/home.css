@@ -1,0 +1,70 @@
+
+
+.homepage {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.homepage-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333; 
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.product-grid {
+    display: flex; /* Use flexbox for centering */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; 
+}
+
+.product-card {
+    background-color: rgb(162, 186, 181); /* White background for product cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    width: 250px; /* Set a fixed width for product cards */
+    border: 3;
+    border-color: aqua;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.product-name{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.product-price {
+    font-size: 1.25em;
+    color: #01070e; /* Bootstrap primary color for prices */
+}
+
+.view-details {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #3d4a49; 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.view-details:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

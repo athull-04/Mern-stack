@@ -1,0 +1,65 @@
+/* src/components/cart.css */
+
+.cart-page {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.cart-page h1 {
+    text-align: center;
+    color: #333; /* Darker text color for better readability */
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between cart items */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background-color: white; /* White background for item cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px;
+}
+
+.cart-item-image {
+    width: 50px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.cart-item-name {
+    flex-grow: 1; /* Allow name to take available space */
+    font-size: 1.25em; /* Larger font for item name */
+}
+
+.cart-item-price {
+    font-size: 1.25em; /* Larger font for item price */
+    color: #007bff; /* Bootstrap primary color for prices */
+}
+
+.cart-total {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.checkout-button {
+    display: block;
+    margin: 20px auto; /* Center the button */
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.checkout-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
